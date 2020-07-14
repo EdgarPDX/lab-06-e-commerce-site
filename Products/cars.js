@@ -47,4 +47,7 @@ const porsche = {
     description: 'Black, 1 seater racing car'
 };
 
+const CARS = [lamborghini, mercedes, bmw, vw, porsche];
+
+
 export default CARS;
