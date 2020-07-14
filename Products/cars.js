@@ -1,12 +1,12 @@
-export default CARS;
+
 
 const lamborghini = {
-    id: 'lamborghini',
-    name: 'GALLARDO',
-    image: '../assets/sportscar.png',
-    category: 'sports-car',
+    id:'lamborghini',
+    name:'GALLARDO',
+    image:'../assets/sportscar.png',
+    category:'sports-car',
     price: 50.00,
-    description: 'Red, 2 Seater mid-engine sports car',
+    description: 'Red, 2 Seater mid-engine sports car'
 
 };
 
@@ -16,9 +16,9 @@ const mercedes = {
     image: '../assets/luxurysuv.png',
     category: 'luxury-suv',
     price:55.00,
-    description: 'Black, luxury 5 passenger suv',
+    description: 'Black, luxury 5 passenger suv'
 
-}
+};
 
 const bmw = {
     id: 'bmw',
@@ -26,8 +26,8 @@ const bmw = {
     image: '../assets/bmwsuv.jpg',
     category: 'suv',
     price: 30.00,
-    description: 'Maroon, 5 passenger suv',
-}
+    description: 'Maroon, 5 passenger suv'
+};
 
 const vw = {
     id: 'vw',
@@ -37,7 +37,7 @@ const vw = {
     price: 35.00,
     description: 'Orange, 7 passenger van'
 }
-
+;
 const porsche = {
     id: 'porsche',
     name: 'Porsche 911',
@@ -45,5 +45,6 @@ const porsche = {
     category: 'race-car',
     price: 60.00,
     description: 'Black, 1 seater racing car'
-}
+};
 
+export default CARS;
