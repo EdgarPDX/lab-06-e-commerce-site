@@ -21,4 +21,19 @@ function roundCurrency(amount) {
     return Math.round(amount * 100) / 100;
 }
 
+export function calcOrderItem(cart, CARS) {
+    //initialize cart order as 0
+    let orderTotal = 0;
 
+    //Loop through cart
+    for (let i = 0; i < cart.length; i++){
+        //grab a item from cart
+        const lineItem = cart[i];
+        //look through products and cart to find matching items
+        const car = findById(CARS, lineItem.id);
+        //calculating line total price * amount of same item
+        const lineTotal = calcLineTotal(lineItem.quantity, car.price);
+        orderTotal += lineTotal;
+    }
+    return roundCurrency(orderTotal);
+}
