@@ -19,5 +19,12 @@ export function renderLineItem(lineItem, car){
     priceColumn.textContent = `$${car.price}.00`;
     trElement.append(priceColumn);
 
+    const totalColumn = document.createElement('td');
+    totalColumn.classList.add('line-item-total');
+    const total = Number(lineItem.quantity) * Number(car.price);
+    totalColumn.textContent = `$${total}`;
+    trElement.append(totalColumn);
+
+
     return trElement;                       
 }
