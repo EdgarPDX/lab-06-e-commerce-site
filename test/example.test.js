@@ -75,7 +75,7 @@ test('Renders line items to dom', assert => {
     const lamborghini = findById(CARS, car.id);
     
     // Set up your arguments and expectations
-    const expected = `<tr><td class="cart-cars">GALLARDO</td><td>3</td><td>$50.00</td></tr>`;
+    const expected = `<tr><td class="cart-cars">GALLARDO</td><td>3</td><td>$50.00</td><td class="line-item-total">$150</td></tr>`;
 
     // Call the function you're testing and set the result to a const
     const dom = renderLineItem(car, lamborghini);
