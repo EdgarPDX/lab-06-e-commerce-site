@@ -1,0 +1,14 @@
+
+table{
+    width:500px;
+    border:solid black 5px;
+    
+}
+
+thead, th{
+    border:solid black;
+    border-width: 2px;
+}
+button{
+    align-self: center;
+}
