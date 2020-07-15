@@ -1,16 +1,16 @@
 
 
-const lamborghini = {
+const Lamborghini = {
     id:'lamborghini',
     name:'GALLARDO',
     image:'../assets/sportscar.png',
     category:'sports-car',
-    price: 50.00,
+    price:50.00,
     description: 'Red, 2 Seater mid-engine sports car'
 
 };
 
-const mercedes = {
+const Mercedes = {
     id: 'mercedes',
     name: 'G-Wagon',
     image: '../assets/luxurysuv.png',
@@ -20,7 +20,7 @@ const mercedes = {
 
 };
 
-const bmw = {
+const BMW = {
     id: 'bmw',
     name: 'x5',
     image: '../assets/bmwsuv.jpg',
@@ -29,7 +29,7 @@ const bmw = {
     description: 'Maroon, 5 passenger suv'
 };
 
-const vw = {
+const VW = {
     id: 'vw',
     name: 'VW Bus',
     image: '../assets/vwvan.png',
@@ -38,7 +38,7 @@ const vw = {
     description: 'Orange, 7 passenger van'
 }
 ;
-const porsche = {
+const Porsche = {
     id: 'porsche',
     name: 'Porsche 911',
     image: '../assets/porsche.png',
@@ -47,7 +47,7 @@ const porsche = {
     description: 'Black, 1 seater racing car'
 };
 
-const CARS = [lamborghini, mercedes, bmw, vw, porsche];
+const CARS = [Lamborghini, Mercedes, BMW, VW, Porsche];
 
 
 export default CARS;
