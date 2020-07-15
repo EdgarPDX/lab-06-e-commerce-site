@@ -1,7 +1,9 @@
 
 table{
-    width:500px;
+    width:800px;
     border:solid black 5px;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -9,6 +11,27 @@ thead, th{
     border:solid black;
     border-width: 2px;
 }
+
+.button{
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row-reverse;
+    padding-top: 80px;
+    padding-right: 80px;
+}
 button{
-    align-self: center;
+    width: 200px;
+    
+}
+tbody{
+   border: solid 1px black;
+   
+    
+}
+td {
+    border: solid .5px;
+}
+.shopping-container{
+    display:grid;
+    justify-content: center;
 }

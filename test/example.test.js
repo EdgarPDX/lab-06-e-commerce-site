@@ -2,7 +2,8 @@
 import CARS from '../Products/cars.js';
 import { renderLineItem } from '../Shopping Cart/render-line-items.js';
 import { renderCars } from '../Products/renderCars.js';
-import { findById, calcLineTotal } from '../common/utils.js';
+import { findById, calcLineTotal, calcOrderItem } from '../common/utils.js';
+//import cart from '../data/cart.js';
 
 const test = QUnit.test;
 
@@ -84,5 +85,27 @@ test('Renders line items to dom', assert => {
     //Expect
     // Make assertions about what is expected versus the actual result
     assert.equal(lineItem, expected);
+});
+
+test('calculates order total', assert => {
+    //Arrange
+    const cart = [{
+        id:'lamborghini',
+        quantity: 3
+    }, {
+        id:'vw',
+        quantity:1
+    }];
+
+     // Set up your arguments and expectations
+    const expected = 185.00;
+
+    // Call the function you're testing and set the result to a const
+    const orderTotal = calcOrderItem(cart, CARS);
+    
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    assert.equal(orderTotal, expected);
 });
 
