@@ -35,7 +35,7 @@ export function renderCars(cars){
         //console.log(carsInCart);
 
         //need to increment quantity if item is already there || 
-        //if (carsInCart) {
+        if (carsInCart) {
             //carsInCart.quantity++;
         } else {
             const newCar = {
