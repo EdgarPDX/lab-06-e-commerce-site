@@ -1,3 +1,6 @@
+import { getCart, findById } from '../common/utils.js';
+
+
 export function renderCars(cars){
     const liElement = document.createElement('li');
     liElement.classList.add(cars.category);
@@ -24,6 +27,30 @@ export function renderCars(cars){
     button.textContent = 'Add';
     pTag.append(button);
     
+    button.addEventListener('click', () =>{
+        //console.log(cars.id);
+        const cart = getCart();
+
+        const carsInCart = findById(cart, cars.id);
+        //console.log(carsInCart);
+
+        //need to increment quantity if item is already there || 
+        //if (carsInCart) {
+            //carsInCart.quantity++;
+        } else {
+            const newCar = {
+                id: cars.id,
+                quantity:1
+            };
+            cart.push(newCar);
+        }
+        const stringyCart = JSON.stringify(cart);
+        localStorage.setItem('CART', stringyCart);
+        
+
+
+        
+    });
 
     return liElement;
 }

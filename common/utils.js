@@ -37,3 +37,21 @@ export function calcOrderItem(cart, CARS) {
     }
     return roundCurrency(orderTotal);
 }
+
+export function getCart(){
+    const rawCart = localStorage.getItem('CART');
+    const cart = JSON.parse(rawCart) || [];
+    return cart;
+}
+
+
+export function makeCartList(cart){
+    
+    for (let i = 0; i < cart.length; i++){
+        const itemId = (cart.id);
+        const carQuantity = (cart.quantity);
+        //const itemQuantity = (cart.quantity);
+        //onst message = [itemId, itemQuantity];
+        return `You bought ${carQuantity} ${itemId}'s`;
+    }
+}
