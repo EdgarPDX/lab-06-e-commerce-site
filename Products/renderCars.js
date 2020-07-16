@@ -36,7 +36,7 @@ export function renderCars(cars){
 
         //need to increment quantity if item is already there || 
         if (carsInCart) {
-            //carsInCart.quantity++;
+            carsInCart.quantity++;
         } else {
             const newCar = {
                 id: cars.id,
