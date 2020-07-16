@@ -44,14 +44,3 @@ export function getCart(){
     return cart;
 }
 
-
-export function makeCartList(cart){
-    
-    for (let i = 0; i < cart.length; i++){
-        const itemId = (cart.id);
-        const carQuantity = (cart.quantity);
-        //const itemQuantity = (cart.quantity);
-        //onst message = [itemId, itemQuantity];
-        return `You bought ${carQuantity} ${itemId}'s`;
-    }
-}

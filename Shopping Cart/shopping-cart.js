@@ -26,12 +26,12 @@ orderTotalColumn.textContent = `$${orderTotal}.00`;
 const button = document.getElementById('place-order');
 
 button.addEventListener('click', ()=>{
-    //const cart = getCart();
-    //const message = JSON.stringify(cart, true, 2);
-    //const orderPlaced = makeCartList(message); 
-       
+    
       
-    //const alertNotice = alert(orderPlaced);
+    
+    alert(`Your Order:`);
+   
+    
   
 
 });
