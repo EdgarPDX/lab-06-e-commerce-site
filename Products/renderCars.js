@@ -32,8 +32,7 @@ export function renderCars(cars){
         const cart = getCart();
 
         const carsInCart = findById(cart, cars.id);
-        //console.log(carsInCart);
-
+       
         //need to increment quantity if item is already there || 
         if (carsInCart) {
             carsInCart.quantity++;
